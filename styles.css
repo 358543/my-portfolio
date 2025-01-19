@@ -17,6 +17,9 @@ header {
   background: #333;
   color: #fff;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -32,6 +35,11 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FFB400;
 }
 
 .hero {
@@ -73,6 +81,12 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   margin-top: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: scale(1.1);
+  background-color: #FFB400;
 }
 
 .social-icons {
@@ -83,8 +97,24 @@ nav ul li a {
 .social-icons a {
   margin: 0 0.5rem;
   font-size: 1.5rem;
-  color: #fff;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a.facebook {
+  color: #3b5998;
+}
+
+.social-icons a.github {
+  color: #000;
+}
+
+.social-icons a.youtube {
+  color: #FF0000;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 
 section {
@@ -107,11 +137,12 @@ h2 {
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -130,6 +161,24 @@ form input, form textarea, form button {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #FFB400;
+}
+
+form button {
+  background: #FFB400;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  background-color: #0078D7;
 }
 
 footer {
@@ -149,5 +198,28 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-    
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  }
