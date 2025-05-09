@@ -1,79 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kysler's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Super Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="home" class="animated fadeIn">
-    <div class="hero">
-      <div class="profile-image">
-        <img src="profile.png" alt="Kysler's Profile Picture">
-      </div>
-      <h1 class="glowing-text">Hi, I'm <span class="highlight">Kysler</span></h1>
-      <p class="glowing-text">Beginner Developer | Exploring Code | Building Dreams</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/leeyon.2507" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
-      <a href="https://github.com/358543" target="_blank" class="github"><i class="fab fa-github"></i></a>
-      <a href="https://youtube.com/@johnloydmagno-l2v?si=5p9POz2OG_g4WzIh" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2 class="hero-subtitle">Web Developer & Designer</h2>
+                <p class="hero-description">Creating beautiful, functional, and user-friendly digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x400" alt="Profile Image" class="profile-img">
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="animated fadeIn">
-    <h2 class="glowing-text">About Me</h2>
-    <p class="glowing-text">I'm a beginner developer exploring the world of coding, learning new technologies, and turning ideas into projects. I love experimenting with web development and sharing my journey.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300x300" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate web developer with over 5 years of experience creating modern websites and web applications. I specialize in front-end development but also have strong back-end skills.</p>
+                    <p>My approach combines technical expertise with creative design thinking to deliver solutions that are both functional and visually appealing.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Name:</span> Your Name
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span> your.email@example.com
+                        </div>
+                        <div class="info-item">
+                            <span>Experience:</span> 5+ Years
+                        </div>
+                        <div class="info-item">
+                            <span>Freelance:</span> Available
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="animated fadeIn">
-    <h2 class="glowing-text">Projects</h2>
-    <div class="project-grid">
-      <div class="project animated zoomIn">
-        <h3 class="glowing-text">Countdown 2026</h3>
-        <p class="glowing-text">A countdown timer for the year 2026. Check it out!</p>
-        <a href="https://countdown-2026.onrender.com" target="_blank" class="btn">View Project</a>
-      </div>
-      <div class="project animated zoomIn">
-        <h3 class="glowing-text">LY Autoshare</h3>
-        <p class="glowing-text">A platform to share content automatically. Give it a try!</p>
-        <a href="https://ly-autoshare.onrender.com" target="_blank" class="btn">View Project</a>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-content">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress react"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress node"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content">
+                    <h3>Professional Skills</h3>
+                    <div class="professional-skills">
+                        <div class="professional-skill">
+                            <div class="radial-progress" data-progress="95">
+                                <span class="progress-value">95%</span>
+                                <h4>Creativity</h4>
+                            </div>
+                        </div>
+                        <div class="professional-skill">
+                            <div class="radial-progress" data-progress="90">
+                                <span class="progress-value">90%</span>
+                                <h4>Teamwork</h4>
+                            </div>
+                        </div>
+                        <div class="professional-skill">
+                            <div class="radial-progress" data-progress="85">
+                                <span class="progress-value">85%</span>
+                                <h4>Communication</h4>
+                            </div>
+                        </div>
+                        <div class="professional-skill">
+                            <div class="radial-progress" data-progress="80">
+                                <span class="progress-value">80%</span>
+                                <h4>Project Management</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="animated fadeIn">
-    <h2 class="glowing-text">Contact Me</h2>
-    <form id="contact-form">
-      <label for="name" class="glowing-text">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email" class="glowing-text">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message" class="glowing-text">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                        <div class="project-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p>Full-stack e-commerce solution with React and Node.js</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                        <div class="project-overlay">
+                            <h3>Mobile Fitness App</h3>
+                            <p>React Native application for fitness tracking</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="design">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                        <div class="project-overlay">
+                            <h3>UI/UX Design</h3>
+                            <p>Complete redesign for a SaaS platform</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 4">
+                        <div class="project-overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Custom portfolio for a photographer</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 5">
+                        <div class="project-overlay">
+                            <h3>Task Management App</h3>
+                            <p>Productivity app built with Flutter</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="design">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 6">
+                        <div class="project-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Logo and branding for a startup</p>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p class="glowing-text">&copy; 2025 Kysler. All Rights Reserved.</p>
-  </footer>
-  
-  <script src="script.js"></script>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <p>"Working with this developer was an absolute pleasure. They delivered beyond our expectations and were incredibly professional throughout the project."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/80x80" alt="Client 1">
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <span>CEO, Tech Company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"The attention to detail and creative solutions provided were exactly what our project needed. Will definitely work with them again!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/80x80" alt="Client 2">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Fast, efficient, and high-quality work. They understood our vision perfectly and brought it to life better than we imagined."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/80x80" alt="Client 3">
+                            <div class="author-info">
+                                <h4>Michael Brown</h4>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>your.email@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (123) 456-7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>Passionate web developer creating modern, responsive websites and applications with a focus on user experience.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to my newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-  </html>
-  
+                  </html>
